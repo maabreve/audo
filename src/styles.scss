@@ -1,0 +1,126 @@
+@import  url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@media screen and (max-width: 600px) {
+    .inner-container {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    
+    .list-header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .inner-container {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+}
+
+body {
+    background-color: #f3f3f3 !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.inner-container {
+    padding: 70px 20px;
+}
+
+.btn {
+    border-radius: 30px !important;
+    font-size: 0.7em !important;
+}
+
+.link {
+    cursor: pointer;
+}
+ 
+input[type=text] {
+    margin: 0px !important;
+    box-sizing: border-box;
+    border: 1px solid #f4f6f8 !important;
+    padding: 25px;  
+    width: 100%;
+    font-weight: bold;
+  }
+
+button {
+    padding: 10px 30px !important;
+    text-transform: uppercase !important;
+    margin: 10px !important;
+}
+
+
+.login-container {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+}
+
+  
+::placeholder {
+    font-weight: bold;
+    color: #bbbbbb !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.list-container {
+    padding-top: 10px;
+}
+
+.list-item {
+    margin-bottom: 20px;
+}
+
+.list-header {
+    padding: 10px 20px 5px 20px;
+    margin: 0 !important;
+    font-size: 0.9em;
+}
+
+.column-selected {
+    color: #569AF1 !important;
+}
+
+.row {
+    width: 100% !important;
+}
+
+.card  {
+    flex-direction: row !important;
+    padding: 20px;
+    border: none !important;
+}
+
+.card .label-sm {
+    font-size: 0.8em;
+}
+;
+.card .label-xg {
+    font-size: 1.2em; 
+}
+
+
+.card.selected {
+    background-color: #569AF1 !important;
+    color: #ffffff !important;
+}
+
+
+.btn-list {
+    color: #569AF1 !important;
+    background-color: #eeeeee !important;
+    font-size: 0.85em;
+}
+
+.title-header {
+    cursor: pointer;
+    color: #cccccc;
+}

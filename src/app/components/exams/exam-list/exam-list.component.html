@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div class="inner-container">
+  <h5>
+    Meus Exames
+  </h5>
+  <div class="list-container">
+    <div class="list-header">
+      <app-exam-header (sort)="sort($event)">
+      </app-exam-header>
+    </div>
+    <div *ngFor="let exam of exams">
+      <app-exam-item [exam]="exam"></app-exam-item>
+    </div>
+  </div>
+</div>

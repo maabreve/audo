@@ -1,0 +1,26 @@
+<div id="web-container">
+    <div class="list-item">
+        <div class="row card no-margin" [ngClass]="{'selected': selected }">
+            <div class="col-md-2 label-sm">
+                {{ getExamDate(exam.date) }}
+            </div>
+            <div class="col-md-6 label">
+                {{ exam.name }}
+            </div>
+            <div class="col-md-2 label-sm">
+                {{ exam.requestedBy }}
+            </div>
+            <div class="col-md-2 label-sm text-right">
+                {{ selected ? 'Menos' : 'Mais' }} detalhes
+                <i class="fa link" [ngClass]="{'fa-angle-down': !selected, 'fa-angle-up': selected }"
+                    (click)="toogleDetails()"></i>
+            </div>
+        </div>
+        <div *ngIf="selected">
+            <div class="card">
+                <button class="btn btn-list">Ver laudo</button>
+                <button class="btn btn-list">Baixar imagens</button>
+            </div>
+        </div>
+    </div>
+</div>

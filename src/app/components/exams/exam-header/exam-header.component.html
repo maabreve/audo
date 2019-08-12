@@ -1,0 +1,27 @@
+<div class="row list-header no-margin">
+    <div class="col-md-2" (click)="sortColumn(1)">
+        <div class="title-header" [ngClass]="{'column-selected': columnSelected === 1 }">
+            Data
+            <i class="fa link" [ngClass]="{'fa-angle-down': columnSelected === 1 && columnSortAsc===true, 
+                                                    'fa-angle-up': columnSelected === 1 && columnSortAsc===false }">
+            </i>
+        </div>
+    </div>
+    <div class="col-md-6" (click)="sortColumn(2)">
+        <div class="title-header" [ngClass]="{'column-selected': columnSelected === 2 }">
+            Exame
+            <i class="fa link" [ngClass]="{'fa-angle-down': columnSelected === 2 && columnSortAsc===true, 
+                                                    'fa-angle-up': columnSelected === 2 && columnSortAsc===false }">
+            </i>
+        </div>
+    </div>
+    <div class="col-md-2" (click)="sortColumn(3)">
+        <div class="title-header" [ngClass]="{'column-selected': columnSelected === 3 }">
+            Solicitante
+            <i class="fa link" [ngClass]="{'fa-angle-down': columnSelected === 3 && columnSortAsc===true, 
+                                                'fa-angle-up': columnSelected === 3 && columnSortAsc===false }">
+            </i>
+        </div>
+
+    </div>
+</div>

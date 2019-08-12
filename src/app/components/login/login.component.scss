@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+  #message {
+    visibility: hidden;
+  }
+}
+
+.logo {
+  width: 270px;
+}
+
+
+#image-container {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.form { 
+  margin-bottom: 60px;
+  position: relative;
+}
+
+#form-container {
+  margin: 0 auto;
+}
+
+#message-container {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+
+.form-group {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.form-group-container {
+  margin-bottom: 45px;
+}
+
